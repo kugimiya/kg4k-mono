@@ -304,7 +304,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Бомжатся обработка руды",
+          "name:8": "Бомжатская обработка руды",
           "desc:8": "Короче, рано или поздно тебе придется обработать руду в достаточном количестве, чтобы пройти квесты в этой линии.\nСпускайся в шахту, друг, и копай. Копай медь, олово, железо, серебро, свинец. Очень рекомендую копать при помощи Bronze Hammer. Дешево и быстро.\nА потом круши в гриндилке. :3"
         }
       },
@@ -770,6 +770,12 @@
               "Count:3": 1,
               "Damage:2": 77,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "ic2:te",
+              "Count:3": 1,
+              "Damage:2": 78,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
@@ -864,7 +870,7 @@
     "11:10": {
       "questID:3": 11,
       "preRequisites:11": [
-        10
+        12
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -988,7 +994,7 @@
     "13:10": {
       "questID:3": 13,
       "preRequisites:11": [
-        10
+        11
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1039,9 +1045,7 @@
     "14:10": {
       "questID:3": 14,
       "preRequisites:11": [
-        13,
-        12,
-        11
+        13
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1116,7 +1120,7 @@
     "15:10": {
       "questID:3": 15,
       "preRequisites:11": [
-        14
+        16
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1224,7 +1228,6 @@
     "17:10": {
       "questID:3": 17,
       "preRequisites:11": [
-        16,
         15
       ],
       "properties:10": {
@@ -1301,7 +1304,7 @@
     "18:10": {
       "questID:3": 18,
       "preRequisites:11": [
-        17
+        10
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1997,7 +2000,7 @@
     "29:10": {
       "questID:3": 29,
       "preRequisites:11": [
-        28
+        30
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2022,7 +2025,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Расширяем хранилище.",
-          "desc:8": "Говорят, что в начале 192кб памяти хватит всем.\n\nДа, крафтить и высекать процессоров придется много. Это посвящение."
+          "desc:8": "Говорят, что в 460кб памяти хватит всем.\n\nДа, крафтить и высекать процессоров придется много. Самое время автоматизировать крафт процессоров!"
         }
       },
       "tasks:9": {
@@ -2036,7 +2039,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "appliedenergistics2:storage_cell_64k",
-              "Count:3": 3,
+              "Count:3": 10,
               "tag:10": {},
               "Damage:2": 0,
               "OreDict:8": ""
@@ -2052,7 +2055,7 @@
           "rewards:9": {
             "0:10": {
               "id:8": "appliedenergistics2:drive",
-              "Count:3": 3,
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -2063,7 +2066,7 @@
     "30:10": {
       "questID:3": 30,
       "preRequisites:11": [
-        29
+        28
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2135,6 +2138,317 @@
           }
         }
       }
+    },
+    "31:10": {
+      "questID:3": 31,
+      "preRequisites:11": [
+        13
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "minecraft:lava_bucket",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Блин, а иногда ветра нет!",
+          "desc:8": "На этот случай мы будет генерировать энергию из жара лавы! Приходи сюда когда сделаешь геотермальный генератор и наберешь ведро воды. Забирай приз и подключай генератор к батбоксам."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "ic2:te",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:lava_bucket",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:obsidian",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "32:10": {
+      "questID:3": 32,
+      "preRequisites:11": [
+        31
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "buildcraftcore:engine",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Не буду же я каждый раз ведра таскать...",
+          "desc:8": "У нас есть OpenBlocks и BuildCraft! То что нужно, чтобы выкачивать кучу лавы из озер Ада.\n\nТебе понадобятся танкеры, помпа и жидкостные трубы. А ещё простые двигатели красной пыли, которые будут записывать помпу. По 1й штуке с каждой стороны двигателя.\n\nЛава сама будет идти в трубу, её всего лишь нужно поставить над помпой. Направляй трубы в танкеры, они начнут заполняться. Ты в любой момент можешь забрать танкеры домой, сломав их киркой.\n\nДержка в руке пустое ведро, можно сделать ПКМ по танкеру и забрать ведро лавы из него. Можно так же автоматизировать процесс: поставить к танкеру деревянную жидкостную трубу, к этой трубе поставить двигатель красной пыли. Золотыми трубами соединить деревянную трубу и геотермальный генератор. У вас теперь тонна энергии, мои поздравления!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "buildcraftfactory:pump",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "openblocks:tank",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "buildcraftcore:engine",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "buildcrafttransport:pipe_gold_fluid",
+              "Count:3": 24,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "33:10": {
+      "questID:3": 33,
+      "preRequisites:11": [
+        32
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "thermaldynamics:servo",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Улучшаем выкачку лавы из танкера",
+          "desc:8": "Хспади, у нас же есть Thermal Expansion!\nДавай сделаем несколько hardened жидкостных труб и серво.\n\nСоедени танкер с лавой с геотермальным генератором этими трубами.\nУ трубы, что подключена к танкеру поставь серво. Рядом с этим серво поставь красный факел (или настрой серво на игнор редстоун сигнала). Мега харош! Теперь лава течет в генератор"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "thermaldynamics:duct_16",
+              "Count:3": 8,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "thermaldynamics:servo",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "34:10": {
+      "questID:3": 34,
+      "preRequisites:11": [
+        13
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "ic2:te",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "У нас в небе тероядерный реактор, чел!",
+          "desc:8": "Дааа, го сделаем солнечную панель."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "ic2:te",
+              "Count:3": 1,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:coal",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "35:10": {
+      "questID:3": 35,
+      "preRequisites:11": [
+        34
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "ic2:te",
+            "Count:3": 3,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "1EU/t... Маловато?",
+          "desc:8": "Я тоже так думаю. Давай ещё 3 штучки, чтобы было 4EU/t днём. (60EU/sec, при учете что на сервере будет 20 t/s)\n\nПозже солярки (так называют это семейство генераторов) станут нашим основным генератором энергии. Мы будет делать миллионы EU/t."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 1,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "ic2:te",
+              "Count:3": 3,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -2143,13 +2457,13 @@
         "0:10": {
           "sizeX:3": 24,
           "x:3": -288,
-          "y:3": -168,
+          "y:3": -156,
           "id:3": 0,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -192,
+          "x:3": -288,
           "y:3": -120,
           "id:3": 1,
           "sizeY:3": 24
@@ -2163,7 +2477,7 @@
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -120,
+          "x:3": -252,
           "y:3": -120,
           "id:3": 3,
           "sizeY:3": 24
@@ -2178,28 +2492,28 @@
         "5:10": {
           "sizeX:3": 24,
           "x:3": -192,
-          "y:3": -24,
+          "y:3": -36,
           "id:3": 5,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
           "x:3": -192,
-          "y:3": 24,
+          "y:3": 0,
           "id:3": 6,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
           "x:3": -192,
-          "y:3": 72,
+          "y:3": 36,
           "id:3": 7,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
           "x:3": -192,
-          "y:3": 120,
+          "y:3": 72,
           "id:3": 8,
           "sizeY:3": 24
         },
@@ -2212,72 +2526,107 @@
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": -72,
+          "x:3": -60,
+          "y:3": 0,
           "id:3": 10,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": 24,
-          "y:3": -144,
+          "x:3": -60,
+          "y:3": -72,
           "id:3": 11,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": -144,
+          "x:3": -60,
+          "y:3": -36,
           "id:3": 12,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -144,
+          "x:3": -60,
+          "y:3": -108,
           "id:3": 13,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": -216,
+          "x:3": -108,
+          "y:3": -144,
           "id:3": 14,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": -192,
+          "x:3": -108,
+          "y:3": -216,
           "id:3": 15,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": -240,
+          "x:3": -108,
+          "y:3": -180,
           "id:3": 16,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": -192,
-          "y:3": -216,
+          "x:3": -108,
+          "y:3": -252,
           "id:3": 17,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": -288,
-          "y:3": -216,
+          "x:3": 12,
+          "y:3": 0,
           "id:3": 18,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": -144,
+          "id:3": 31,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": -180,
+          "id:3": 32,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": -216,
+          "id:3": 33,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": -144,
+          "id:3": 34,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": -180,
+          "id:3": 35,
           "sizeY:3": 24
         }
       },
       "lineID:3": 0,
       "properties:10": {
         "betterquesting:10": {
-          "visibility:8": "CHAIN",
+          "visibility:8": "UNLOCKED",
           "name:8": "Тир первый",
           "icon:10": {
             "id:8": "ic2:re_battery",
@@ -2369,14 +2718,14 @@
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": -144,
+          "x:3": -96,
           "y:3": -48,
           "id:3": 29,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -96,
+          "x:3": -144,
           "y:3": -48,
           "id:3": 30,
           "sizeY:3": 24
